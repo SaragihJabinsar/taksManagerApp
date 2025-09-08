@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 min-h-screen flex flex-col items-center p-6">
+
+    <h1 class="text-3xl font-bold mb-6">
+        ✅ Task Manager
+    </h1>
+
+    <!-- form -->
+     <form id="taskForm" class="w-full max-w-md flex gap-2 mb-6">
+        <input type="text" id="taskInput" placeholder="Tambah tugas baru..." class="flex-1 p-2 border rounded" required/>
+
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+            Tambah
+        </button>
+     </form>
+
+     <!-- Task List -->
+      <ul id="taskList" class="w-full max-w-md space-y-3"></ul>
+
+    <!-- Footer -->
+     <footer class="mt-10 text-gray-500">
+        Dibuat oleh <span class="font-bold">Saragih Jabinsar</span>
+     </footer>
+     
+
+     <script src="script.js"></script>
+
+    
+</body>
+</html>
